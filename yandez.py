@@ -1,2 +1,2 @@
-yandex = ' "My first program printed "Hello, Yandex!" :)'
+yandex = ' My first program printed "Hello, Yandex!" :)'
 print(yandex)
