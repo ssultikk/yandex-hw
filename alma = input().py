@@ -1,0 +1,6 @@
+alma = input()
+dop = input()
+afro = input()
+print(afro)
+print(dop)
+print(alma)

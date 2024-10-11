@@ -1,0 +1,27 @@
+# Игнорировать системные файлы Windows
+*.log
+*.dat
+*.blf
+*.regtrans-ms
+NTUSER.*
+
+# Игнорировать конфигурации VSCode
+.vscode/
+
+# Игнорировать пользовательские папки
+/Contacts/
+/Desktop/
+/Documents/
+/Downloads/
+/Favorites/
+/Links/
+/Music/
+/OneDrive/
+/Pictures/
+/Videos/
+
+# Игнорировать системные папки Windows
+/AppData/
+/Program Files/
+/Program Files (x86)/
+/Windows/
