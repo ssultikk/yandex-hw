@@ -6,3 +6,4 @@ elif ("@" not in adres) and ("@" in name):
     print("Некорректный адрес")
 else:
     print("OK")
+
