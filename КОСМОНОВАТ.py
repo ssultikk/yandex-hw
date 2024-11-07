@@ -14,7 +14,7 @@ if maxrost is None or rost > maxrost:
 if minrost is None or rost < minrost:
     minrost = rost
 
-    rost = input()
+rost = input()
 
     
 print(count)

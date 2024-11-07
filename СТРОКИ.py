@@ -1,5 +1,4 @@
 strok = 0
-
 word = input()
 
 while word != "Спасибо.":
@@ -7,6 +6,6 @@ while word != "Спасибо.":
     word = input()
 
 if word == "Спасибо.":
-   strok += 1 
+    strok += 1
 
 print(strok)

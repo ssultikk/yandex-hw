@@ -7,6 +7,6 @@ while temp >= -300:
     average += temp
     temp = float(input())
 
-answer = average/count
+answer = average / count
 
 print(f"{answer:.1f}")
