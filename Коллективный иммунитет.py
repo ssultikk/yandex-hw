@@ -6,7 +6,7 @@ while True:
     if s == "":
         break
     total += 1
-    if s.lower() == "да":  # Приведение к нижнему регистру для сравнения
+    if s.lower() == "да":
         yes += 1
 
 if total > 0 and yes / total >= 0.8:
