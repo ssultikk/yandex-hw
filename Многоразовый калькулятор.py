@@ -1,38 +1,34 @@
-second_num = True
-
 while True:
-    san = 0
-    san2 = 0
+    try:
+        san = int(input())
+        simvol = input().strip()
 
-    san = int(input())
-    simvol = input()
-
-    if simvol in ["+", "-", "*", "/"]:
-        san2 = int(input())
-
-    if simvol == "+":
-        print(san + san2)
-
-    elif simvol == "-":
-        print(san - san2)
-
-    elif simvol == "*":
-        print(san * san2)
-
-    elif simvol == "/":
-        if san2 != 0:
-            print(san // san2)
-
-    elif simvol == "!":
-        if san > 1:
-            factorial = 1
-            temp_san = san
-            while temp_san > 1:
-                factorial *= temp_san
-                temp_san -= 1
-            print(factorial)
-            second_num = False
-
-    elif simvol == "x":
-        second_num = False
-        print(san)
+        if simvol in ["+", "-", "*", "/", "%"]:
+            san2 = int(input())
+            if simvol == "+":
+                print(san + san2)
+            elif simvol == "-":
+                print(san - san2)
+            elif simvol == "*":
+                print(san * san2)
+            elif simvol == "/":
+                if san2 != 0:
+                    print(san // san2)
+            elif simvol == "%":
+                if san2 != 0:
+                    print(san % san2)
+        elif simvol == "!":
+            if san >= 0:
+                factorial = 1
+                for i in range(2, san + 1):
+                    factorial *= i
+                print(factorial)
+        elif simvol == "x":
+            print(san)
+            break
+        else:
+            continue
+    except ValueError:
+        continue
+    except Exception:
+        continue
