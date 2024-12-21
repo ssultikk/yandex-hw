@@ -14,11 +14,9 @@ while True:
     if min_word == "" or len(word) < len(min_word):
         min_word = word
 
-# Создаем множества букв в каждом слове
 set_max = set(max_word)
 set_min = set(min_word)
 
-# Проверяем, есть ли все буквы короткого слова в длинном
 if set_min.issubset(set_max):
     print("ДА")
 else:
